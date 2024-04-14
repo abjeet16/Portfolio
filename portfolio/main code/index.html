@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: 'poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 80px;
+            background-color:rgb(4, 4,20);
+        }
+        nav ul{
+        display: flex;
+        justify-content: center;
+        }
+        nav ul li{
+        list-style: none;
+        margin: 0 20px;
+        }
+        nav ul li a{
+        text-decoration: none;
+        color: white;
+        }
+        nav ul li a:hover{
+        color: rgb(153,153,220);
+        font-size: 1.2rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .leftSection{
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+        .rightSection{
+            width: 30%;
+        }
+        .rightSection img{
+            width: 80%;
+            margin: 50px 0;
+        }
+        .purple{
+            color:rgb(170, 107, 228);
+        }
+        #element{
+            color:rgb(170, 107, 228);
+        }
+        .secoundSection{
+           max-width: 80vw;
+           margin: auto;
+        }
+        .secoundSection h1{
+            font-size: 1.5rem;
+        }
+        .secoundSection hr{
+            border: 0;
+            background: white;
+            height: 1.2px;
+        }
+        .main hr{
+            border: 0;
+            background: rgb(187, 127, 244);
+            height: 1.2px;
+            margin: 23px 70px;
+        }
+        .Textgray{
+            color: gray;
+        }
+        .secoundSection .Horizontalbox{
+            background-color: white;
+            height: 2px;
+            width: 100%;
+            margin: 20px 0;
+            display: block;
+        }
+        .secoundSection .verticalBox{
+            height: 200px;
+            width: 2px;
+            background-color:white;
+            display: flex;
+            margin: 5px 0;
+        }
+        .secoundSection .verticalBox img{
+            margin: 0 20px;
+        }
+        .verticalBox .heading{
+            margin: 5px 23px;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .verticalBox .content{
+            display: flex;
+        }
+        .verticalBox .workExperienceBlock{
+           display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <dev class="left">Abjeet's Portfolio</dev>
+            <dev class="right">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Services</li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li><a href="/">Contact Me</li></a>
+                </ul>
+            </dev>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Abjeet Yadav</span>
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection">
+                <img src="/portfolio/images/devicon.png" alt="devicon">
+            </div>
+        </section>
+        <hr>
+        <section class="secoundSection">
+            <span class="Textgray">What  i have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="Horizontalbox">
+                <div class="verticalBox">
+                    <div class="workExperienceBlock">
+                        <p class="heading">
+                            <img src="/portfolio/images/htmlcssjs.png" height="100px" width="100px" alt="web image">
+                            Web Development
+                        </p>
+                        <span class="content">In the ever-evolving digital landscape, I've embarked on an exhilarating journey, shaping online experiences through more than 30 web projects. Each endeavor has been a canvas for innovation, collaboration, and relentless pursuit of excellence. </span>
+                    </div>
+                </div>
+                <div class="verticalBox">
+                    <p class="heading">
+                        <img src="/portfolio/images/androidlogo.png" height="100px" width="100px" alt="web image">
+                        Android Development
+                    </p>
+                    <p class="content"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--TYPE JS START-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Android Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+    <!--TYPE JS END-->
+
+</body>
+</html>
